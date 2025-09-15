@@ -82,8 +82,8 @@ int main(int argc, char*argv[]) {
 
 
 	
-	for (auto& wd : massiv_of_words) {
-		wd.freq_persent = (wd.freq / total_words) * 100;
+	for (Word_Struct&i : massiv_of_words) {
+		i.freq_persent = (i.freq / total_words) * 100;
 	}
 	
 	sort(massiv_of_words.begin(), massiv_of_words.end(), word_compare);
@@ -94,4 +94,5 @@ int main(int argc, char*argv[]) {
 
 	return 0;
 	
+
 }
